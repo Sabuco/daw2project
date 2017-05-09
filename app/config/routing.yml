@@ -1,0 +1,22 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+aimeos_shop:
+    resource: "@AimeosShopBundle/Resources/config/routing.yml"
+    prefix: /
+aimeos_shop_adm:
+    resource: "@AimeosShopBundle/Resources/config/routing_adm.yml"
+    prefix: /
+aimeos_shop_extadm:
+    resource: "@AimeosShopBundle/Resources/config/routing_extadm.yml"
+    prefix: /admin/{site}/extadm
+aimeos_shop_jqadm:
+    resource: "@AimeosShopBundle/Resources/config/routing_jqadm.yml"
+    prefix: /admin/{site}/jqadm
+aimeos_shop_jsonadm:
+    resource: "@AimeosShopBundle/Resources/config/routing_jsonadm.yml"
+    prefix: /admin/{site}/jsonadm
+aimeos_shop_jsonapi:
+    resource: "@AimeosShopBundle/Resources/config/routing_jsonapi.yml"
+    prefix: /jsonapi

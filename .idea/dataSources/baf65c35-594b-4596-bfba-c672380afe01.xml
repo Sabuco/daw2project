@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - daw2db@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="daw2db">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="daw"/>
+    <schema id="3" name="dbdaw2"/>
+    <schema id="4" name="information_schema"/>
+    <schema id="5" name="m7daw2"/>
+    <schema id="6" name="mysql"/>
+    <schema id="7" name="performance_schema"/>
+    <schema id="8" name="sys"/>
+  </database-model>
+</dataSource>
