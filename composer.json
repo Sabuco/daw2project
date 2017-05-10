@@ -46,8 +46,7 @@
         ],
         "post-install-cmd": [
             "Aimeos\\ShopBundle\\Composer\\ScriptHandler::installBundle",
-            "Aimeos\\ShopBundle\\Composer\\ScriptHandler::updateConfig",
-            "Aimeos\\ShopBundle\\Composer\\ScriptHandler::setupDatabase"
+            "Aimeos\\ShopBundle\\Composer\\ScriptHandler::updateConfig"
         ],
         "post-update-cmd": [
             "Aimeos\\ShopBundle\\Composer\\ScriptHandler::installBundle",
