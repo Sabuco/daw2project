@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "62aee0fb4c97f9134d3d8650a3fdf2cf",
+    "content-hash": "050465861f7c91c88d7a26e9bb831866",
     "packages": [
         {
             "name": "aimeos/ai-admin-extadm",
@@ -3276,7 +3276,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "friendsofsymfony/user-bundle": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

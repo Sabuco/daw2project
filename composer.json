@@ -12,6 +12,8 @@
         "files": [ "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php" ]
     },
     "require": {
+        "doctrine/common": "~2.4",
+        "friendsofsymfony/user-bundle": "~2.0@dev",
         "aimeos/aimeos-symfony2": "~2017.04",
         "php": ">=5.5.9",
         "aimeos/aimeos-symfony": "^2017.04",
@@ -49,8 +51,7 @@
         ],
         "post-update-cmd": [
             "Aimeos\\ShopBundle\\Composer\\ScriptHandler::installBundle",
-            "Aimeos\\ShopBundle\\Composer\\ScriptHandler::updateConfig",
-            "Aimeos\\ShopBundle\\Composer\\ScriptHandler::setupDatabase"
+            "Aimeos\\ShopBundle\\Composer\\ScriptHandler::updateConfig"
         ]
     },
     "config": {
