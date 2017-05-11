@@ -40,6 +40,14 @@ twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
 
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    user_class: Aimeos\ShopBundle\Entity\FosUser
+    firewall_name: aimeos_myaccount
+    from_email:
+        address: "alvarogs56@gmail.com"
+        sender_name: "Alvaro"
+
 # Doctrine Configuration
 doctrine:
     dbal:
