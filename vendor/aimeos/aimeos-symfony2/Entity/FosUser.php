@@ -27,7 +27,10 @@ class FosUser extends BaseUser
 	 */
 	protected $id;
 
-
+	/**
+	 * @ORM\Column(name="salt", type="string", length=255)
+	 */
+	protected $salt = 'mshop';
 
 	/**
 	 * @ORM\Column(name="salutation", type="string", length=8)
@@ -160,6 +163,13 @@ class FosUser extends BaseUser
 	}
 
 
+	/**
+	 * @inheritDoc
+	 */
+	public function getSalt()
+	{
+		return $this->salt;
+	}
 
 
 	/**

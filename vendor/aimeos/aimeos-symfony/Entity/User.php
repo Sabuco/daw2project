@@ -186,6 +186,13 @@ class User implements UserInterface, \Serializable
 	}
 
 
+	/**
+	 * @inheritDoc
+	 */
+	public function getSalt()
+	{
+		return 'mshop';
+	}
 
 
 	/**

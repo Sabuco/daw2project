@@ -160,7 +160,13 @@ class FosUser extends BaseUser
 	}
 
 
-
+	/**
+	 * @inheritDoc
+	 */
+	public function getSalt()
+	{
+		return $this->salt;
+	}
 
 
 	/**
