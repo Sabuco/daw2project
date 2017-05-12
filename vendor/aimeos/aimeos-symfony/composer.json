@@ -1,0 +1,61 @@
+{
+	"name": "aimeos/aimeos-symfony",
+	"description": "Full-featured Symfony web shop bundle and e-commerce solution for high performance shops",
+	"homepage": "https://aimeos.org/Symfony",
+	"type": "symfony-bundle",
+	"license": "MIT",
+	"keywords": ["aimeos", "symfony", "e-commerce", "ecommerce", "shop", "portal", "market place"],
+	"support": {
+		"source": "https://github.com/Aimeos/aimeos-symfony",
+		"issues": "https://github.com/Aimeos/aimeos-symfony/issues",
+		"forum": "https://aimeos.org/help",
+		"wiki": "https://aimeos.org/docs"
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/aimeos/php-coveralls.git"
+		}
+	],
+	"prefer-stable": true,
+	"minimum-stability": "dev",
+	"require": {
+		"php": ">=5.3.3",
+		"aimeos/aimeos-core": "~2017.04",
+		"aimeos/ai-gettext": "~2017.04",
+		"aimeos/ai-monolog": "~2017.04",
+		"aimeos/ai-symfony": "~2017.04",
+		"aimeos/ai-swiftmailer": "~2017.04",
+		"aimeos/ai-admin-extadm": "~2017.04",
+		"aimeos/ai-admin-jqadm": "~2017.04",
+		"aimeos/ai-admin-jsonadm": "~2017.04",
+		"aimeos/ai-client-jsonapi": "~2017.04",
+		"aimeos/ai-client-html": "~2017.04",
+		"aimeos/ai-fosuser": "~2017.04",
+		"aimeos/ai-twig": "~2017.04",
+		"friendsofsymfony/user-bundle": "~2.0@dev",
+		"symfony/symfony": "~2.8||~3.0",
+		"symfony/twig-bundle": "~2.1||~3.0",
+		"symfony/swiftmailer-bundle": "~2.3",
+		"symfony/monolog-bundle": "~2.4||~3.0",
+		"sensio/framework-extra-bundle": "~2.3||~3.0",
+		"symfony/psr-http-message-bridge": "~1.0",
+		"zendframework/zend-diactoros": "~1.3"
+	},
+	"require-dev": {
+		"satooshi/php-coveralls": "dev-master",
+		"doctrine/doctrine-bundle": "~1.2",
+		"doctrine/orm": "~2.2,>=2.2.3",
+		"phpunit/phpunit": "~4.0||~5.0"
+	},
+	"autoload": {
+		"psr-4": { "Aimeos\\ShopBundle\\": "" }
+	},
+	"scripts": {
+		"post-update-cmd": [
+			"cp -r ext/ai-admin-extadm/admin/extjs/resources/* Resources/public/admin/extjs/resources/",
+			"cp -r ext/ai-admin-extadm/admin/extjs/lib/* Resources/public/admin/extjs/lib/",
+			"cp -r ext/ai-client-html/client/html/themes/* Resources/public/themes/"
+		]
+	}
+}

@@ -12,5 +12,7 @@
 /var/sessions/*
 !var/sessions/.gitkeep
 !var/SymfonyRequirements.php
-/vendor/
+!/vendor
+/vendor/*
+!/vendor/aimeos
 /web/bundles/
