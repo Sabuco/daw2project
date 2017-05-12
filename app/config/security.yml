@@ -7,7 +7,7 @@ security:
         admin:
             memory:
                 users:
-                    admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
+                    admin: { password: secret, roles: [ 'ROLE_ADMIN' ] }
         aimeos_customer:
             entity: { class: AimeosShopBundle:User, property: username }
         in_memory:
@@ -23,13 +23,6 @@ security:
 
 
     firewalls:
-        aimeos_myaccount:
-            pattern: ^/
-            form_login:
-                provider: aimeos_customer
-
-            logout:       true
-            anonymous:    true
         aimeos_admin:
             pattern:   ^/admin
             anonymous: ~
@@ -37,6 +30,14 @@ security:
             form_login:
                 login_path: /admin
                 check_path: /admin_check
+        aimeos_myaccount:
+            pattern: ^/
+            form_login:
+                provider: aimeos_customer
+
+            logout:       true
+            anonymous:    true
+
 
         # disables authentication for assets and the profiler, adapt it according to your needs
         dev:
