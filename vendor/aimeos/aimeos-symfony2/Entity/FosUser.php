@@ -27,10 +27,7 @@ class FosUser extends BaseUser
 	 */
 	protected $id;
 
-	/**
-	 * @ORM\Column(name="salt", type="string", length=255)
-	 */
-	protected $salt = 'mshop';
+
 
 	/**
 	 * @ORM\Column(name="salutation", type="string", length=8)
